@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/addPassengerImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription=""
+        android:padding="@dimen/padding_standard"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_add"
+        android:tint="@color/color_icon_red" />
+
+    <ImageButton
+        android:id="@+id/subtractPassengerImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription=""
+        android:padding="@dimen/padding_standard"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_remove"
+        android:tint="@color/color_icon_red" />
+
+    <ImageButton
+        android:id="@+id/refreshPassengerImageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription=""
+        android:padding="@dimen/padding_standard"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_refresh"
+        android:tint="@color/color_icon_red" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/addDisabledPassengerImageButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription=""
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_disabled"
+            android:tint="@color/color_icon_red" />
+
+        <ImageButton
+            android:id="@+id/addBikePassengerImageButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription=""
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_bike"
+            android:tint="@color/color_icon_red" />
+    </LinearLayout>
+</LinearLayout>

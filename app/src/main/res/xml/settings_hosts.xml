@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference
+	  android:key="@string/server_key"
+	  android:inputType="textUri"
+	  android:defaultValue="192.168.30.151"
+	  android:title="@string/server_url_title"
+	  android:icon="@mipmap/icon_cnx_server_url"/>
+	<EditTextPreference
+	  android:key="@string/local_ip_address_key"
+	  android:inputType="textUri"
+	  android:defaultValue="127.0.0.1"
+	  android:title="@string/local_ip_address_title"
+	  android:icon="@mipmap/icon_medius_local_ip"/>
+	<EditTextPreference
+	  android:key="@string/map_tile_key"
+	  android:inputType="textUri"
+	  android:defaultValue="maptiles.connexionz.net"
+	  android:title="@string/map_tile_server_title"
+	  android:icon="@mipmap/icon_route_map"/>
+</PreferenceScreen>

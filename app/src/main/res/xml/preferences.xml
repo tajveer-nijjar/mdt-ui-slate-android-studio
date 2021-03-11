@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<PreferenceCategory
+		android:key="@string/vehicle_information"
+		android:title="@string/vehicle_information">
+
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:icon="@mipmap/icon_extension"
+			android:key="@string/has_medius_installed_key"
+			android:title="@string/vehicle_has_medius_installed" />
+
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:icon="@mipmap/icon_add_user"
+			android:key="@string/apc_enabled_key"
+			android:title="@string/vehicle_has_apc_installed"
+			app:allowDividerAbove="true" />
+
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:icon="@mipmap/icon_boat"
+			android:key="@string/is_ferry_key"
+			android:title="@string/vehicle_is_a_ferry"
+			app:allowDividerAbove="true" />
+
+		<EditTextPreference
+			android:defaultValue="13"
+			android:digits="0123456789"
+			android:icon="@mipmap/icon_comms_address"
+			android:inputType="number"
+			android:key="@string/comms_address_key"
+			android:title="@string/comms_address"
+			app:allowDividerAbove="true" />
+
+		<EditTextPreference
+			android:defaultValue="1"
+			android:icon="@mipmap/icon_company_tag"
+			android:inputType="number"
+			android:key="@string/company_tag_key"
+			android:title="@string/company_tag"
+			app:allowDividerAbove="true" />
+
+		<SwitchPreferenceCompat
+			android:defaultValue="false"
+			android:icon="@mipmap/icon_mdt_login_secure"
+			android:key="@string/secure_login_key"
+			android:summary="@string/note_this_option"
+			android:title="@string/ensure_mdt_login_is_secure"
+			app:allowDividerAbove="true" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		key="networking"
+		android:title="Networking">
+		<!--The tag name defines the Preference item row (on main settings page)-->
+		<!--app:fragment defines that what happens/opens when user clicks on the settings item.-->
+		<MDT.Droid.CustomControls.CaretCustomPreferenceItem
+			android:icon="@mipmap/icon_hostnames"
+			android:key="@string/hostnames_key"
+			android:summary="@string/hostnames_summary"
+			android:title="@string/hostnames_title"
+			app:fragment="com.connexionz.mdt.droid.SettingsActivity$SettingsHostsFragment"
+			app:prefix="@string/hostnames_summary" />
+
+		<MDT.Droid.CustomControls.CaretCustomPreferenceItem
+			android:icon="@mipmap/icon_ports"
+			android:key="@string/ports_key"
+			android:summary="@string/ports_summary"
+			android:title="@string/ports_title"
+			app:allowDividerAbove="true"
+			app:fragment="com.connexionz.mdt.droid.SettingsActivity$SettingsPortsFragment"
+			app:prefix="@string/ports_summary" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		key="@string/pages_key"
+		android:title="@string/pages_key">
+		<MDT.Droid.CustomControls.CaretAndCheckboxCustomPreferenceItem
+			android:defaultValue="true"
+			android:fragment="com.connexionz.mdt.droid.SettingsActivity$SettingsTripInfoTabFragment"
+			android:icon="@mipmap/icon_trip_info"
+			android:key="@string/show_trip_info_tab_key"
+			android:title="&quot;Trip Info&quot; tab..." />
+
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:icon="@mipmap/icon_fare_count"
+			android:key="@string/fare_count_key"
+			android:title="&quot;Fare Count&quot; tab..." />
+
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:icon="@mipmap/icon_route_map"
+			android:key="@string/route_map_key"
+			android:title="&quot;Route Map&quot; tab..." />
+
+		<MDT.Droid.CustomControls.CaretAndCheckboxCustomPreferenceItem
+			android:defaultValue="true"
+			android:fragment="com.connexionz.mdt.droid.SettingsActivity$SettingsVehicleAssignmentTabFragment"
+			android:icon="@mipmap/icon_vehicle_assignment"
+			android:key="@string/show_vehicle_assignment_tab_key"
+			android:title="&quot;Vehicle Assignment&quot; tab..." />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		key="@string/misc_key"
+		android:title="@string/misc_title">
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:icon="@mipmap/icon_messaging_bar"
+			android:key="@string/show_messaging_bar_key"
+			android:title="@string/show_messaging_bar_title" />
+
+		<EditTextPreference
+			android:defaultValue="0"
+			android:icon="@mipmap/icon_screen_shutoff_speed"
+			android:inputType="numberDecimal"
+			android:key="@string/screen_shutoff_speed_key"
+			android:title="@string/screen_shutoff_speed_title" />
+
+		<Preference
+			android:icon="@mipmap/icon_clear_resource_xml"
+			android:key="@string/clear_resource_key"
+			android:title="@string/clear_resource_title" />
+
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:icon="@mipmap/icon_add_seconds"
+			android:key="@string/show_seconds_in_time_key"
+			android:title="@string/show_seconds_in_time_title" />
+
+		<EditTextPreference
+			android:defaultValue="2580"
+			android:icon="@mipmap/icon_settings_pin"
+			android:inputType="numberPassword"
+			android:key="@string/settings_pin_key"
+			android:title="@string/settings_pin_title" />
+	</PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

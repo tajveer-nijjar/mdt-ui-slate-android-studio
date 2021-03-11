@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_large"
+        android:paddingBottom="@dimen/padding_small"
+        android:text="@string/current_time"
+        android:textSize="@dimen/textsize_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-20dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:contentDescription="@string/clock_icon"
+            android:src="@drawable/icon_clock"
+            android:tint="@color/icon_color_grey" />
+
+        <TextClock
+            android:id="@+id/currentTimeTextClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01:08:11 \npm"
+            android:textSize="@dimen/textsize_extra_large" />
+    </LinearLayout>
+</LinearLayout>

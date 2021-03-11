@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/include_notification_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/noMessagesLabelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="No Messages"
+                android:textSize="@dimen/textsize_medium" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/messagesViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previousMessageImageButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="@dimen/margin_standard"
+                android:background="@drawable/message_buttons_background"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:paddingLeft="@dimen/padding_small"
+                android:src="@mipmap/icon_previous_message"
+                android:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/nextMessageImageButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="@dimen/margin_standard"
+                android:background="@drawable/message_buttons_background"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:paddingLeft="@dimen/padding_very_very_small"
+                android:src="@mipmap/icon_next_message"
+                android:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/replyMessageImageButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="@dimen/margin_standard"
+                android:background="@color/transparent"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_reply"
+                android:tint="@color/iconGrey" />
+
+            <ImageButton
+                android:id="@+id/deleteMessageImageButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@color/transparent"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_delete_message"
+                android:tint="@color/iconGrey"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

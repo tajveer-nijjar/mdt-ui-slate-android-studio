@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference
+	  android:key="@string/can_receive_port_key"
+	  android:defaultValue="3006"
+	  android:inputType="number"
+	  android:title="@string/can_receive_port_title"
+	  android:icon="@mipmap/icon_receive"/>
+	<EditTextPreference
+	  android:key="@string/can_send_port_key"
+	  android:defaultValue="3005"
+	  android:inputType="number"
+	  android:title="@string/can_send_port_title"
+	  android:icon="@mipmap/icon_transmit"/>
+	<EditTextPreference
+	  android:key="@string/http_port_key"
+	  android:defaultValue="8181"
+	  android:inputType="number"
+	  android:title="@string/http_port_title"
+	  android:icon="@mipmap/icon_http"/>
+</PreferenceScreen>

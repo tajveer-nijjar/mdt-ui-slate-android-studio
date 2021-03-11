@@ -1,0 +1,80 @@
+<resources>
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="listPreferredItemHeightSmall">60dp</item>
+		<item name="android:windowBackground">@android:color/white</item>
+
+	</style>
+
+	<style name="NightTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="listPreferredItemHeightSmall">60dp</item>
+		<item name="android:windowBackground">@android:color/black</item>
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+
+
+	<style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="LandingPageTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="listPreferredItemHeightSmall">60dp</item>
+	</style>
+
+	<style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowTranslucentStatus">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="android:statusBarColor">@android:color/black</item>
+	</style>
+
+	<style name="NoActionBarTheme" parent="LoginTheme">
+	</style>
+
+	<style name="AppTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+	<style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+		<item name="colorControlNormal">@color/white</item>
+		<item name="android:drawablePadding">4dp</item>
+	</style>
+
+	<style name="scrollbar_style">
+		<item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+		<item name="android:scrollbarStyle">outsideOverlay</item>
+		<item name="android:scrollbars">vertical</item>
+		<item name="android:fadeScrollbars">true</item>
+		<item name="android:scrollbarThumbVertical">@drawable/scrollbar_thumb</item>
+		<item name="android:scrollbarTrackVertical">@drawable/scrollbar_track</item>
+		<item name="android:scrollbarSize">8dp</item>
+		<item name="android:scrollbarFadeDuration">800</item>
+		<item name="android:scrollbarDefaultDelayBeforeFade">500</item>
+	</style>
+</resources>

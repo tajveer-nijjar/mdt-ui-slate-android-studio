@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/driverStatusRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/atTheWheelRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_group_background"
+            android:buttonTint="@color/white"
+            android:checked="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/at_the_wheel"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/outOfVehicleRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_group_background"
+            android:buttonTint="@color/white"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/out_of_vehicle"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/onABreakRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_group_background"
+            android:buttonTint="@color/white"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/on_a_break"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/nightModeSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:text="Night mode"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <Button
+        android:id="@+id/brightnessButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:drawableLeft="@mipmap/icon_brightness"
+        android:drawablePadding="@dimen/padding_small"
+        android:drawableTint="@color/white"
+        android:padding="@dimen/padding_medium"
+        android:text="Brightness"
+        android:textAlignment="textStart"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:drawableLeft="@mipmap/icon_logout"
+        android:drawablePadding="@dimen/padding_small"
+        android:drawableTint="@color/white"
+        android:padding="@dimen/padding_medium"
+        android:text="Logout"
+        android:textAlignment="textStart"
+        android:textColor="@color/white" />
+
+</LinearLayout>

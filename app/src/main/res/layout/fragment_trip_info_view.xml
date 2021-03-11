@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!--root container linear layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--content linear layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <!--left container linear layout-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <!--passenger count linear layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/fragment_borders"
+                android:orientation="vertical">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/fragmentPassengerCountContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <!--end passenger count linear layout-->
+
+            <!--time container linear layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!--current time linear layout-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment_borders">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragmentCurrentTimeContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <!--end current time linear layout-->
+
+                <!--next time linear layout-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fragment_borders">
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/fragmentNextTimePointContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <!--end next time linear layout-->
+
+            </LinearLayout>
+            <!--end time container linear layout-->
+
+        </LinearLayout>
+        <!--end left container linear layout-->
+
+        <!--stop by stop map-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/fragment_borders">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/stopByStopContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <!--end stop by stop map-->
+
+    </LinearLayout>
+    <!--end content linear layout-->
+
+</LinearLayout><!--end container root linear layout-->

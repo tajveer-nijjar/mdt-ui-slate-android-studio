@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white" />
+
+        <!--Outer LinearLayout is for the border-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+            <!--Inner LinearLayout is for the button-->
+            <LinearLayout
+                android:id="@+id/loginToBeginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="@color/color_blue"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_standard"
+                android:paddingRight="@dimen/padding_standard">
+
+                <ImageView
+                    android:id="@+id/loginIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:clickable="true"
+                    android:contentDescription="@string/login_icon"
+                    android:duplicateParentState="true"
+                    android:foregroundTint="@color/white"
+                    android:src="@drawable/icon_login"
+                    android:tint="@color/white" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:duplicateParentState="true"
+                    android:padding="0dp"
+                    android:text="@string/login_to_begin"
+                    android:textColor="@color/white"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:padding="@dimen/padding_standard"
+            android:src="@drawable/icon_settings"
+
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrey"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_large"
+        android:paddingBottom="@dimen/padding_small"
+        android:text="@string/next_time_point"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="@dimen/textsize_medium" />
+
+    <LinearLayout
+        android:id="@+id/nextTimePointContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_extra_large"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:contentDescription="@string/next_time_point"
+                android:src="@drawable/icon_timer"
+                android:tint="@color/icon_color_grey" />
+
+            <TextView
+                android:id="@+id/nextTimePointTimeTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="4:40"
+                android:textSize="@dimen/textsize_large" />
+
+            <TextView
+                android:id="@+id/nextTimePointAmPmTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="am"
+                android:textSize="@dimen/textsize_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nextTimePointStopNameTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Arroyo Grande City Hall"
+            android:textSize="@dimen/textsize_standard" />
+    </LinearLayout>
+
+</LinearLayout>

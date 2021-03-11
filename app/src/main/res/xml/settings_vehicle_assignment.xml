@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference
+		android:key="@string/show_vehicle_assignment_tab_key" 
+		android:enabled="true"
+		android:defaultValue="false"
+		android:title="Show &quot;Vehicle Assignment&quot; tab"
+		android:icon="@mipmap/icon_vehicle_assignment"/>
+	<PreferenceCategory
+	  android:title="Vehicle Assignment Options"
+	  
+	   >
+		<CheckBoxPreference
+		  android:key="@string/allow_drivers_to_assign_vehicle_key"
+		  android:defaultValue="true"
+		  android:title="@string/allow_drivers_to_assign_title"
+		  android:icon="@mipmap/icon_allow_drivers_to_assign"/>
+
+		<CheckBoxPreference
+		  android:key="@string/allow_drivers_to_enter_passenger_count"
+		  android:defaultValue="false"
+		  android:title="@string/allow_drivers_to_enter_title"
+		  android:icon="@mipmap/icon_allow_driver_to_enter"/>
+	</PreferenceCategory>
+</PreferenceScreen>
